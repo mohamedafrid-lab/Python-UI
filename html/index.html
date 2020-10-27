@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url("cool-background.png");
+  background-color: #cccccc;
+  font-family: Calibri, san-serif; 
+  font-size: 16px;
+}
+
+</style>
+
+</head>
+<body>
+    <pre>
+    <form action='http://15.206.168.165/cgi-bin/hello.py' name="myform">
+    Enter the Remote server name to play: <input name=server type="text" />
+    Enter the username to login remote server: <input name=username type="text" />
+    Enter the password to login remote server: <input name=password type="password" />
+    <br />
+    <input type="submit" value="check rechabilty and setup pre-requisites" />
+    </form>
+
+    <form  name="myform">
+        Which test you want to do: 
+        CPU <input name=CPU type="radio" />
+        I/O <input name=IO type="radio" />
+        Memory <input name=Memory type="radio" />
+        <br />
+        Enter the timeout for load: <input name=timeout type="text" />
+        <br />
+        Enter the no of workers for imposing load: <input name=worker_cpu type="text" />
+        <br />
+        Enter the no of workers for imposing io: <input name=worker_io type="text" />
+        <br />
+        <div class="memory">
+            <label for="worker_count">Worker count:</label>
+            <input name="worker_count" id="worker_count" type="text" />
+       
+            <label for="worker_bytes">Bytes per worker:</label>
+            <input name="worker_bytes" id="worker_bytes" type="text" /> 
+    </div>
+        <input type="submit" />
+        </form>
+
+    </pre>
+
+
+
+
+</body>
+</html>
+
+

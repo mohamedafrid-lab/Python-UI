@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Docker Commands</title>
+</head>
+<body>
+	<style type="text/css">
+		body {
+			background-image: url("cool-background.png");
+			background-color: #cccccc;
+			font-family: Calibri, san-serif;
+			font-size: 16px;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-size: 20px;
+			background-color: lightblue;
+			color: white;
+		}
+		.banner{
+			position: relative;
+			margin: 0 auto;
+		}
+		.banner img{
+			width: 30%;
+		}
+		.heading{
+			font-size: 3rem;
+		}
+		.docker{
+			font-family: arial;
+			text-transform: uppercase;
+			width: 270px;
+			height: 40px;
+			border-radius: 80px;
+			text-align: center;
+			border: 3px solid white;
+			display: block;
+			text-decoration: none;
+			position: relative;
+			color: blue;
+			overflow: hidden;
+			background: white;
+			transition: .3s;
+			font-size: 20px;
+		}
+		.docker:hover{
+			color: white;
+			background: blue;
+			border: 3px solid white;
+			font-size: 20px;
+		}
+	</style>
+<div class="container">
+		<div class="row">
+			<div class="banner">
+				<center>
+					<img src="docker_logo.png" alt="img">
+					<h1 class="heading">Select your any commands</h1><br><br>
+					<a href="docker_start.html" class="docker">Start</a><br>
+					<a href="http://15.206.168.165/cgi-bin/docker_status.py" class="docker">All containers</a><br>
+					<a href="docker_launch.html" class="docker">Launch</a><br>
+					<a href="docker_stop.html" class="docker">Stop</a><br>
+					<a href="http://15.206.168.165/cgi-bin/docker_version.py" class="docker">Version</a><br>
+                    <a href="http://15.206.168.165/cgi-bin/docker_images.py" class="docker">Available Images</a><br>
+                    <a href="docker_inspect.html" class="docker">Inspect container</a><br>
+				</center>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

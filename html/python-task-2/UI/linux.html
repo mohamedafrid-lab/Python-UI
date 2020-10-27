@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Linux Commands</title>
+</head>
+<body>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-size: 10px;
+			background-image: url("cool-background-Grad.png");;
+			background-color: #cccccc;
+			font-family: Calibri, san-serif;
+		}
+		.banner{
+			position: relative;
+			margin: 0 auto;
+            font-size: 10px;
+		}
+		.form-cmd{
+			text-align: left;
+			margin-left: 20%;
+			line-height: 200%;
+			font-family: arial;
+			font-size: 18px;
+		}
+		.btn{
+			font-family: arial;
+			text-transform: uppercase;
+			width: 270px;
+			height: 40px;
+			border-radius: 80px;
+			text-align: center;
+			border: 3px solid white;
+			display: block;
+			text-decoration: none;
+			position: relative;
+			margin-left: 25%;
+			color: red;
+			overflow: hidden;
+			background: white;
+			transition: .3s;
+			font-size: 20px;
+		}
+		.btn:hover{
+			color: white;
+			background: red;
+			border: 3px solid white;
+			font-size: 20px;
+		}
+		input[type="radio"]{
+			height: 30px;
+			width: 30px;
+			border-radius: 50%;
+			border: 3px solid red;
+		}
+		.heading{
+			font-size: 3rem;
+		}
+	</style>
+<div class="container">
+		<div class="row">
+			<div class="banner">
+				<center>
+				<img src="redhat_logo.png" alt="img">
+				<h1 class="heading">Whats you choice </h1><br><br>
+				<div class="form-cmd">
+				<form action="http://15.206.168.165/cgi-bin/task2.py">
+					<input type="radio" name="x" value="date"> Show me the current date<br>
+					<input type="radio" name="x" value="cal"> Show me the current calender<br>
+					<input type="radio" name="x" value="ifconfig"> Show me the current IP Address<br>
+					<input type="radio" name="x" value="ls"> Show me the current List of Files<br>
+					<input type="radio" name="x" value="systemctl status httpd"> Show me the current Status of httpd<br>
+					<input type="radio" name="x" value="getenforce"> Show me the current Status of SElinux<br>
+					<input type="radio" name="x" value="ls -lh"> Show me the current Long List with Human Readable<br>
+					<input type="radio" name="x" value="pwd"> Show me the current Present Working Directory<br>
+					<input type="radio" name="x" value="free -m"> Show me the current Memory Space<br>
+					<input type="radio" name="x" value="df -hT"> Show me the current Disk Space<br><br>
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+				</center>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
